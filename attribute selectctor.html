@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+        body,h1,ul{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .music-player {
+            background-color: brown;
+            border-radius: 10px;
+            box-shadow: 10px 20px 30px rgb(250,100,200);
+            padding: 20px;
+            max-height: 500px;
+            overflow-y: auto;
+
+        }
+        .music-player h1{
+             font-size: 24px;
+             margin-left: 20px;
+             color: aquamarine;
+             text-align: center;
+        }
+        .music-player ul.{
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        .music-player li{
+            padding: 10px;
+            border-bottom: 1px solid blueviolet;
+            cursor: pointer;
+        }
+        .music-player li:last-child{
+            border-bottom: none;
+        }
+        .music-playerli[data-song$-".mp3"]{
+            background-color:white;
+        }
+        .music-player li[data-song^-"song"]{
+            color: #000;
+        }
+        .music-player li:hover {
+            background-color: aquamarine;
+
+        }
+        .music-player li:hover[data-song$-".mp3"] {
+            background-color: black;
+        }
+        .music-player li:hover[data-song^-"song"] {
+            color: rgb(250 250 0);
+        }
+
+    </style>
+    </head>
+    <body>
+        <div>
+            <audio controls autoplay muted loop><source src="./Huppa Huiya.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./Jai Shriram.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./Priya Mithunam.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./Ram Sita Ram.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./Shivoham.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./sample-12s.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./sample-9s.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./sample-15s.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./Downloads/sample-12s - Copy.mp3" type="audio/mp3">
+            </audio><br>
+            <audio controls autoplay muted loop><source src="./sample-6s.mp3" type="audio/mp3">
+            </audio><br>
+        </div>
+    </body>
+</html>    
+        
